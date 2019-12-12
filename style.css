@@ -1,0 +1,49 @@
+body {
+    background-color: #ebf0f2;
+}
+
+.conteudo {
+    padding: 20px 20px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+/* space between divs */
+.space {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+ /* card styles */
+
+.card {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Add shadows to create the "card" effect */
+    transition: 0.3s;
+    padding: 4px 16px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); /* On mouse-over, add a deeper shadow */
+}
+
+
+/* form styles  */
+
+input[type=text] {
+    padding: 8px 12px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #000000;
+}
+
+.button {
+    /* display: inline-block; */
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 6px;
+    background-color: #9c27b0;
+    font-size: 16px;
+    color: #fff;
+}
