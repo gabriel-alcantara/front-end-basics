@@ -1,23 +1,25 @@
-// function validateInput(valueInput) {
-//     var reg = new RegExp("^([1-8][0-9])|(9[0-9])|(100)$");
+function validateInput(valueInput) {
+    var reg = new RegExp("[1-9][0-9]");
+    console.log(document.readyState);
     
-//     console.log('#', valueInput)
-//     if (reg.test(valueInput)) {
-//         console.log("Valid");
-//         getRandomNumbers(validateInput);
-//     } else {
-//         console.log("invalid value");
-//         document.getElementById("inputNumber").focus();
-//     }
+    if (reg.test(valueInput)) {
+        console.log("Valid");
+        getRandomNumbers(valueInput);
+    } else {
+        console.log("invalid value");
+        document.getElementById("inputNumber").focus();
+    }
 
-// }
+}
 
 
 var randomNumbers = []; 
 
+var cont = 0;
+
 function getRandomNumbers(qtd) {
     console.log('value inserted: ', qtd);
-
+    
     randomNumbers = []; // zerando array
     // var ul = document.createElement("UL");
 
@@ -32,29 +34,28 @@ function getRandomNumbers(qtd) {
     }
 
     var para = document.createElement("P");
-
     para.innerHTML = randomNumbers;                 
-    document.body.appendChild(para);
+    // document.body.appendChild(para);
     document.getElementById("random").appendChild(para);
 
     var para = document.createElement("P");   
     para.innerHTML = randomNumbers.sort();
-    document.body.appendChild(para);
+    // document.body.appendChild(para);
     document.getElementById("sorted").appendChild(para);
 
     var para = document.createElement("P");   
     para.innerHTML = randomNumbers.sort((a, b) => b-a );
-    document.body.appendChild(para);
+    // document.body.appendChild(para);
     document.getElementById("reverseSorted").appendChild(para);
 
     var para = document.createElement("P");   
     para.innerHTML = randomNumbers.filter(num => num % 2 == 0 && num !== 0).sort((a, b) => b-a );
-    document.body.appendChild(para);
+    // document.body.appendChild(para);
     document.getElementById("even").appendChild(para);
 
     var para = document.createElement("P");   
     para.innerHTML = randomNumbers.filter(num => num % 2 !== 0 && num !== 0).sort();
-    document.body.appendChild(para);
+    // document.body.appendChild(para);
     document.getElementById("odd").appendChild(para);
 
 
