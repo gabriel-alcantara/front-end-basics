@@ -3,8 +3,7 @@
 <head>
     <link rel="stylesheet" href="style.css">
     <script src="jsfile.js"></script>
-    <title>temp</title>
-
+    <title>Números Aleatórios</title>
 </head>
 
 
@@ -12,29 +11,32 @@
     <div class="main">
         <div class="conteudo">
 
-            <div class="card">
-                <h1>Quantidade de números desejados:</h1>
-            </div>
+            <h1>Quantidade de números desejados:</h1>
 
             <div class="space">
-
-                <input type="text" #inputNumber name="inputNumber" id="inputNumber" value="0">
-                <button class="button" onclick="validateInput(inputNumber.value)">Chama função</button>
-            
+                <input type="text" #inputNumber name="inputNumber" id="inputNumber" placeholder="valor">
+                <button class="button" onclick="validateInput(inputNumber.value)">Go!</button>
             </div>
-            
 
-            <div class="" id="random">Random Numbers</div>
+            <div class="card" id="random">
+                <h3>Números Randômicos</h3>
+            </div>
 
-            <div class="" id="sorted">Sorted Numbers</div>
+            <div class="card" id="sorted">
+                <h3>Ordenados em Ordem Crescente</h3>
+            </div>
 
-            <div class="" id="reverseSorted">Sorted Numbers</div>
+            <div class="card" id="reverseSorted">
+                <h3>Ordenados em Ordem Descrescente</h3>
+            </div>
 
-            <div class="" id="even">Even Numbers</div>
+            <div class="card" id="odd">
+                <h3>Ímpares Crescente</h3>
+            </div>
 
-            <div class="" id="odd">Odd Numbers</div>
-
-
+            <div class="card" id="even">
+                <h3>Pares Decrescente</h3>
+            </div>
         </div>
     </div>
 
